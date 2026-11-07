@@ -11,10 +11,6 @@ package:
 source:
   url: https://pypi.org/packages/source/f/flax/flax-${{ version }}.tar.gz
   sha256: 5cc6cca80157f6810a4d76d2a03832ad1e8dba43cfcbbfdb53b6806745f3ec63
-  patches:
-    # Remove after v0.12.6
-    # c.f. https://github.com/google/flax/issues/5352
-    - remove-orbax-export-from-dependencies.patch
 
 build:
   number: 0
